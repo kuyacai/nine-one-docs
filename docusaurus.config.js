@@ -173,6 +173,18 @@ const config = {
       type: 'text/css',
     },
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 70,
+        max: 1030, // 最大缩放图片尺寸
+        min: 640, // 最小缩放图片尺寸
+        steps: 2, // 在 min 和 max 之间生成的图片数量
+        disableInDev: false,
+      },
+    ],
+  ],
 };
 
 export default config;
