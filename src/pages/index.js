@@ -7,6 +7,7 @@ import Hero from '@site/src/components/plurk/Hero';
 import HeroOneApiWithSwiper from '@site/src/components/plurk/HeroOneApiWithSwiper';
 import FAQ from '@site/src/components/plurk/FAQ';
 import ChatBotSwiper from '@site/src/components/plurk/ChatBotSwiper';
+import Pricing from '@site/src/components/plurk/Pricing';
 import UserProvider from '@site/src/contexts/UserContext';
 import StatusProvider from '@site/src/contexts/StatusContext';
 import { SnackbarProvider } from 'notistack';
@@ -22,6 +23,7 @@ export default function MyPage() {
             <HeroOneApiWithSwiper />
             <FAQ />
             <ChatBotSwiper />
+            <Pricing />
           </PlurkLayout>
         </StatusProvider>
       </UserProvider>
