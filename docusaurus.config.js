@@ -91,12 +91,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/nine-one-400-1800.png',
       navbar: {
         title: 'Nine One AI',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Nine One AI Logo',
+          src: 'img/nine_one.svg',
           href: 'https://nineone.ai',
         },
         items: [
