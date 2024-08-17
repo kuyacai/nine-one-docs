@@ -6,6 +6,7 @@ import PlurkLayout from '@site/src/components/plurk/PlurkLayout';
 import Hero from '@site/src/components/plurk/Hero';
 import HeroOneApiWithSwiper from '@site/src/components/plurk/HeroOneApiWithSwiper';
 import FAQ from '@site/src/components/plurk/FAQ';
+import ChatBotSwiper from '@site/src/components/plurk/ChatBotSwiper';
 import UserProvider from '@site/src/contexts/UserContext';
 import StatusProvider from '@site/src/contexts/StatusContext';
 import { SnackbarProvider } from 'notistack';
@@ -20,6 +21,7 @@ export default function MyPage() {
             <Hero />
             <HeroOneApiWithSwiper />
             <FAQ />
+            <ChatBotSwiper />
           </PlurkLayout>
         </StatusProvider>
       </UserProvider>
