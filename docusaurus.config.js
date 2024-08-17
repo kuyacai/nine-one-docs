@@ -6,6 +6,10 @@
 
 import { themes as prismThemes } from 'prism-react-renderer';
 
+const dotenv = require('dotenv');
+
+dotenv.config();
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
@@ -184,6 +188,8 @@ const config = {
         disableInDev: false,
       },
     ],
+    './plugins/docusaurus-plugin-env',
+    './plugins/docusaurus-plugin-proxy', 
   ],
 };
 

@@ -1,10 +1,12 @@
 // src/components/CustomLayout.js
 import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
 import Layout from '@theme/Layout';
 import Head from '@docusaurus/Head';
 import { useColorMode } from '@docusaurus/theme-common';
 import ScreenLoader from '@site/src/components/plurk/ScreenLoader';
 import ReturnToTop from '@site/src/components/plurk/ReturnToTop';
+import { SET_THEME } from '@site/src/store/actions';
 
 const description = 'Nine One AI';
 
@@ -12,6 +14,8 @@ const ColorModeWrapper = ({ children }) => {
     const { colorMode } = useColorMode();
     const [showLoader, setShowLoader] = useState(true);
     const [showTopButton, setShowTopButton] = useState(false);
+
+    const dispatch = useDispatch();
 
     const goToTop = () => {
         document.body.scrollTop = 0;
@@ -49,6 +53,9 @@ const ColorModeWrapper = ({ children }) => {
         window.scroll(0, 0);
     }, [location.pathname]);
 
+    useEffect(() => {
+        dispatch({ type: SET_THEME, theme: colorMode });
+      }, [dispatch]);
     
 
 
