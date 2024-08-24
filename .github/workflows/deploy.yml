@@ -31,10 +31,16 @@ jobs:
           cp static/CNAME build/CNAME
           cp robots.txt build/robots.txt
 
-      - name: Check Git user info
+      - name: Set Git user info
         run: |
-          git config --global user.name
-          git config --global user.email
+          git config --global user.name "kuyacai"
+          git config --global user.email "24796839@qq.com"
+
+      - name: Check Git user name
+        run: git config --global user.name || echo "Failed to get user.name"
+
+      - name: Check Git user email
+        run: git config --global user.email || echo "Failed to get user.email"
 
       - name: Check remote URL
         run: git remote -v
