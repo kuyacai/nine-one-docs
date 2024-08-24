@@ -7,6 +7,7 @@ import { useColorMode } from '@docusaurus/theme-common';
 import ScreenLoader from '@site/src/components/plurk/ScreenLoader';
 import ReturnToTop from '@site/src/components/plurk/ReturnToTop';
 import { SET_THEME } from '@site/src/store/actions';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 const description = 'Nine One AI';
 
@@ -34,33 +35,33 @@ const ColorModeWrapper = ({ children }) => {
     };
 
     useEffect(() => {
-        document.addEventListener('scroll', onScrollHandler);
+        if (ExecutionEnvironment.canUseDOM) {
+            document.addEventListener('scroll', onScrollHandler);
 
-        const screenLoader = document.getElementsByClassName('tw-screen_loader');
-        if (screenLoader?.length) {
-            setTimeout(() => {
-                setShowLoader(false);
-            }, 200);
+            const screenLoader = document.getElementsByClassName('tw-screen_loader');
+            if (screenLoader?.length) {
+                setTimeout(() => {
+                    setShowLoader(false);
+                }, 200);
+            }
+
+            return () => {
+                document.removeEventListener('scroll', onScrollHandler);
+            };
         }
-
-        return () => {
-            document.removeEventListener('scroll', onScrollHandler);
-        };
-    }, [location.pathname]);
-
+    }, [ExecutionEnvironment.canUseDOM && location.pathname]);
 
     useEffect(() => {
-        window.scroll(0, 0);
-    }, [location.pathname]);
+        if (ExecutionEnvironment.canUseDOM) {
+            window.scroll(0, 0);
+        }
+    }, [ExecutionEnvironment.canUseDOM && location.pathname]);
 
     useEffect(() => {
         dispatch({ type: SET_THEME, theme: colorMode });
-      }, [dispatch]);
-    
-
+    }, [dispatch, colorMode]);
 
     return (
-
         <div className={colorMode === 'dark' ? 'tw-dark' : ''}>
             {showLoader && <ScreenLoader />}
             <div dir="ltr" className="tw-flex tw-min-h-screen tw-flex-col tw-bg-gradient-to-r tw-from-[#FCF1F4] tw-to-[#EDFBF9] tw-font-mulish tw-text-base tw-font-normal tw-text-gray tw-antialiased dark:tw-bg-[#101926] dark:tw-from-transparent dark:tw-to-transparent">
@@ -75,16 +76,12 @@ const ColorModeWrapper = ({ children }) => {
 };
 
 export default function PlurkLayout({ children, title }) {
-
-
     return (
         <Layout description={description}>
             <Head />
             <ColorModeWrapper>
-
                 {children}
                 {/* <Footer /> */}
-
             </ColorModeWrapper>
         </Layout>
     );

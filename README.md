@@ -6,3 +6,16 @@ This website is built using [Docusaurus](https://docusaurus.io/), a modern stati
 
 ```bash
 $ npm install
+```
+
+### Build 
+
+```bash
+$ npm run build
+```
+
+### Deploy
+
+```bash
+$ npm run deploy
+```
