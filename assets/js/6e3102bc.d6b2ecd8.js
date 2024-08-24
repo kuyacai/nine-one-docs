@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknine_one_docs=self.webpackChunknine_one_docs||[]).push([[467],{2486:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/nine-one-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
