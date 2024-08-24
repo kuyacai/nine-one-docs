@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4  # 更新到 v4
+        with:
+          fetch-depth: 0  # 克隆整个历史记录
 
       - name: Set up Node.js
         uses: actions/setup-node@v4  # 更新到 v4
@@ -28,6 +30,22 @@ jobs:
         run: |
           cp static/CNAME build/CNAME
           cp robots.txt build/robots.txt
+
+      - name: Check Git user info
+        run: |
+          git config --global user.name
+          git config --global user.email
+
+      - name: Check remote URL
+        run: git remote -v
+
+      - name: Debug information
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "List files:"
+          ls -la
+          echo "Git status:"
+          git status
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
