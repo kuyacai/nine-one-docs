@@ -54,6 +54,15 @@ const config = {
       },
     },
   },
+  themes: [
+    // 其他主题...
+    [
+      '@docusaurus/theme-classic',
+      {
+        id: 'custom-toc',
+      }
+    ]
+  ],
 
   presets: [
     [
@@ -64,13 +73,13 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          remarkPlugins: [require('remark-numbered-headings')],
+          remarkPlugins: [[require('./plugins/remark-custom-numbered-headings'), { separator: '.' }]],
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
-          remarkPlugins: [require('remark-numbered-headings')],
+          remarkPlugins: [[require('./plugins/remark-custom-numbered-headings'), { separator: '.' }]],
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
@@ -193,7 +202,7 @@ const config = {
       },
     ],
     './plugins/docusaurus-plugin-env',
-    './plugins/docusaurus-plugin-proxy', 
+    './plugins/docusaurus-plugin-proxy',
     [
       '@docusaurus/plugin-google-gtag',
       {
