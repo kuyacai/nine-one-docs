@@ -64,11 +64,13 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
+          remarkPlugins: [require('remark-numbered-headings')],
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
+          remarkPlugins: [require('remark-numbered-headings')],
           feedOptions: {
             type: ['rss', 'atom'],
             xslt: true,
