@@ -19,13 +19,9 @@ export default function MyPage() {
     <SnackbarProvider autoHideDuration={5000} maxSnack={3} anchorOrigin={{ vertical: 'top', horizontal: 'right' }}>
       <UserProvider>
         <StatusProvider>
-          <PlurkLayout title="My Custom Page">
+          <PlurkLayout title="Nine One AI">
             <Hero />
             <HeroOneApiWithSwiper />
-            <FAQ />
-            <ChatBotSwiper />
-            <Pricing />
-            <SwiperProvider />
           </PlurkLayout>
         </StatusProvider>
       </UserProvider>
