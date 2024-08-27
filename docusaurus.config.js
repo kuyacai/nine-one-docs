@@ -192,6 +192,13 @@ const config = {
     ],
     './plugins/docusaurus-plugin-env',
     './plugins/docusaurus-plugin-proxy', 
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-DD28CVV37B',
+        anonymizeIP: true,
+      },
+    ]
   ],
 };
 
