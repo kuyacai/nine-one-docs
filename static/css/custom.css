@@ -1,0 +1,406 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+/* src/css/custom.css */
+
+@font-face {
+  font-family: 'reey';
+  src: url('../fonts/reey-regular-webfont.woff2') format('woff2'), url('../fonts/reey-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .tw-btn {
+      @apply tw-inline-block tw-rounded-2xl tw-bg-primary tw-py-4 tw-px-7 tw-text-center tw-text-sm tw-font-extrabold tw-uppercase tw-text-black tw-transition hover:tw-scale-105 hover:tw-bg-secondary hover:tw-text-white;
+  }
+  .tw-heading {
+      @apply tw-mb-10 lg:tw-mb-14;
+  }
+  .tw-heading h6 {
+      @apply tw-mb-3 tw-text-lg tw-font-extrabold tw-text-primary sm:tw-mb-4;
+  }
+  .tw-heading h4 {
+      @apply tw-text-2xl tw-font-extrabold tw-text-black dark:tw-text-white sm:tw-text-3xl lg:tw-text-[40px] lg:!tw-leading-[50px];
+  }
+  .tw-portfolio-filter .tw-filter.tw-active button,
+  .tw-upcoming-party-filter .tw-filter.tw-active button {
+      @apply tw-bg-secondary tw-text-white;
+  }
+  .upcoming-party-filter .filter.active button span {
+      @apply tw-text-white;
+  }
+  .home-filter .filter.active button {
+      @apply tw-text-secondary;
+  }
+  .realestate-filter .filter.active button {
+      @apply tw-scale-105 tw-bg-primary tw-text-white;
+  }
+
+  .photography-filter .filter.active button {
+      @apply tw-bg-secondary tw-text-white;
+  }
+
+  /* NFT Landing Page CSS */
+  .nft-filters li.active button {
+      @apply tw-bg-black tw-text-white dark:tw-bg-white dark:tw-text-black;
+  }
+  .tw-heading-gradiant {
+      @apply tw-mb-12;
+  }
+  .tw-heading-gradiant h4 {
+      @apply tw-relative tw-z-[1] tw-text-3xl tw-font-black tw-uppercase tw-leading-[50px] tw-text-black before:tw-absolute before:tw-top-5 before:tw-z-[-1] before:tw-h-6
+      before:tw-w-[100px] before:tw-bg-primary/20 tw-pl-0.5 before:tw-left-0 before:tw-right-auto rtl:tw-pr-0.5 rtl:before:tw-right-0 rtl:before:tw-left-auto dark:tw-text-white md:tw-text-[40px] md:tw-leading-[60px] md:before:tw-h-[30px];
+  }
+  .tw-heading-gradiant h4 span {
+      @apply tw-bg-gradient-to-r tw-from-secondary tw-to-primary tw-bg-clip-text tw-text-transparent;
+  }
+  .tw-heading-gradiant p {
+      @apply tw-mt-3 tw-font-bold;
+  }
+  /* --------- NFT - END -------- */
+
+  /* Filter */
+
+  .project.hidden {
+      animation: hide 1s ease 0s 1 normal forwards;
+      transform-origin: center;
+  }
+  .project.block {
+      animation: show 1s ease 0s 1 normal forwards;
+      transform-origin: center;
+  }
+
+  @keyframes hide {
+      0% {
+          transform: scale(1);
+          visibility: visible;
+      }
+      100% {
+          transform: scale(0);
+          visibility: hidden;
+      }
+  }
+  @keyframes show {
+      0% {
+          transform: scale(0);
+          visibility: hidden;
+      }
+      100% {
+          transform: scale(1);
+          visibility: visible;
+      }
+  }
+
+  /* Light - Dark Mode */
+
+  .dark .light-mode-btn {
+      @apply tw-block;
+  }
+  .dark .dark-mode-btn {
+      @apply tw-hidden;
+  }
+
+  /* Header */
+
+  header .tw-menus {
+      @apply tw-fixed tw-top-0 tw-z-[52] tw-h-screen tw-w-full tw-max-w-sm tw-gap-9 tw-bg-white tw-transition-all tw-duration-500 tw--right-full rtl:tw--left-full dark:tw-bg-gray-dark lg:tw-static lg:tw-h-auto lg:tw-max-w-none lg:tw-bg-transparent dark:lg:tw-bg-transparent;
+  }
+  header .tw-menus > ul {
+      @apply tw-relative tw-flex tw-flex-col tw-divide-y tw-divide-gray/10 tw-font-bold tw-text-black lg:tw-flex-row lg:tw-items-center lg:tw-gap-11 lg:tw-divide-y-0 lg:tw-p-0 lg:tw-text-white;
+  }
+  header .tw-menus > ul li > a {
+      @apply tw-flex tw-items-center tw-justify-between tw-py-4 tw-px-4 tw-transition hover:tw-text-secondary dark:tw-text-white dark:hover:tw-text-secondary lg:tw-px-0 lg:tw-py-10 hover:lg:tw-scale-110;
+  }
+  header .tw-menus > ul li > a.active {
+      @apply tw-text-secondary lg:tw-scale-110;
+  }
+  header .tw-menus .tw-submenu {
+      @apply tw-invisible tw-z-50 tw-mt-5 tw-hidden tw-grid-cols-1 tw-gap-x-4 tw-rounded-lg tw-py-3 tw-text-sm tw-font-medium tw-text-black tw-opacity-0 tw-transition-all dark:tw-text-white lg:tw-absolute lg:tw-top-full lg:tw-grid lg:tw-min-w-max lg:tw-max-w-xs rtl:lg:tw-translate-x-1/4 lg:tw--translate-x-1/4 lg:tw-grid-cols-3 lg:tw-bg-[#F0F4F7] lg:tw-shadow-lg lg:dark:tw-bg-gray-dark rtl:xl:tw--right-1/2 xl:tw--left-1/2 xl:tw-grid-cols-3;
+      max-width: 300px; /* 限制最大宽度 */
+      right: auto; /* 确保子菜单靠右对齐 */
+      left: auto; /* 确保子菜单靠左对齐 */
+      transform: translateX(-50%); /* 确保子菜单居中 */
+  }
+  .tw-submenu {
+      @apply group-hover:tw-visible group-hover:tw-mt-0 group-hover:tw-grid group-hover:tw-opacity-100;
+      
+  }
+  header .tw-menus .tw-submenu a {
+      @apply tw-block tw-py-2.5 tw-px-8 tw-transition hover:tw-text-secondary lg:tw-px-5 hover:lg:tw-scale-105;
+  }
+  header .tw-menus .tw-submenu a.active {
+      @apply tw-text-secondary lg:tw-scale-105;
+  }
+
+  .text-stroke {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #222a36;
+  }
+
+  /* Creative Agency Page CSS */
+  .tw-text-color {
+      @apply tw-bg-color-img tw-bg-clip-text tw-bg-top tw-bg-no-repeat tw-text-transparent;
+  }
+  
+}
+
+
+
+/* responsive menu */
+
+header .menus.open-menus {
+  @apply tw-overflow-y-auto tw-right-0 rtl:tw-left-0;
+}
+
+/* sticky header */
+
+.tw-sticky-header {
+  @apply tw-bg-black tw-shadow-lg;
+}
+
+/* lightbox */
+
+.fancybox__content > .carousel__button.is-close {
+  @apply rtl:tw-left-0;
+}
+
+/* accordion */
+
+.ac.is-active .ac-trigger .trigger-icon {
+  @apply !tw-border-black !tw-text-black dark:!tw-border-white dark:!tw-text-white;
+}
+
+.ac.is-active .ac-trigger .trigger-icon svg path {
+  @apply first:tw-hidden;
+}
+.open-search-bar {
+  @apply tw-w-full;
+}
+
+/* apex chart */
+
+.dark .apexcharts-canvas .apexcharts-tooltip.apexcharts-theme-light,
+.dark .apexcharts-canvas .apexcharts-xaxistooltip.apexcharts-theme-light {
+  box-shadow: none;
+  @apply tw-border-[#050717cc] tw-bg-[#050717cc] tw-text-white;
+}
+
+.dark .apexcharts-canvas .apexcharts-xaxistooltip-bottom:before,
+.dark .apexcharts-canvas .apexcharts-xaxistooltip-bottom:after {
+  @apply tw-border-b-[#050717cc];
+}
+
+.dark .apexcharts-canvas .apexcharts-tooltip-series-group.apexcharts-active {
+  @apply tw-text-white;
+}
+
+.dark .apexcharts-canvas .apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  @apply tw-border-[#060818] tw-bg-[#060818];
+}
+
+.dark .apexcharts-canvas .apexcharts-tooltip.apexcharts-theme-light {
+  box-shadow: none;
+}
+
+[dir='rtl'] .apexcharts-tooltip-marker {
+  @apply tw-mr-0 tw-ml-2.5;
+}
+
+/* Hotel & resort */
+.book-form input[type='date']::-webkit-calendar-picker-indicator {
+  @apply tw-invert;
+}
+
+/* Photography our Team */
+
+.our-team .swiper-wrapper {
+  @apply tw-items-center;
+}
+
+.our-team .swiper-slide img {
+  @apply tw-h-[390px];
+}
+
+.our-team .swiper-slide.swiper-slide-prev img,
+.our-team .swiper-slide.swiper-slide-next img {
+  @apply tw-h-[478px];
+}
+
+.our-team .swiper-slide.swiper-slide-active img {
+  @apply tw-h-[566px];
+}
+
+@media screen and (max-width: 1200px) {
+  .our-team .swiper-slide img {
+      @apply tw-h-[300px];
+  }
+
+  .our-team .swiper-slide.swiper-slide-prev img,
+  .our-team .swiper-slide.swiper-slide-next img {
+      @apply tw-h-[400px];
+  }
+
+  .our-team .swiper-slide.swiper-slide-active img {
+      @apply tw-h-[500px];
+  }
+  header .tw-menus .tw-submenu {
+      @apply tw-relative tw-top-0 tw-left-0 tw-w-full tw-max-w-none tw-transform-none tw-visible tw-mt-0 tw-grid tw-opacity-100;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .our-team .swiper-slide img {
+      @apply !tw-h-[300px];
+  }
+}
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* custom.css */
+.navbar {
+  @apply tw-bg-black tw-shadow-lg;
+}
+
+.navbar__link,
+.navbar__item {
+  color: white !important;
+}
+
+/* Prevent SVG icon and text from wrapping */
+.navbar__link {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+
+/* Theme the theme switcher icon to always be white */
+.navbar__items.navbar__items--right > :nth-child(3),
+.navbar-sidebar__brand > :nth-child(3) {
+    color: #f5f6f7;
+}
+
+
+.navbar__items.navbar__items--right > :nth-child(3) > :first-child:hover,
+.navbar-sidebar__brand > :nth-child(3) > :first-child:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 0.375rem;
+}
+
+
+
+/* 调整导航栏中的标题文字样式 */
+.navbar__title {
+  color: white !important;
+}
+
+/* Light mode footer styles */
+.footer a {
+  color: #212529; /* 设置链接文字颜色为蓝色 */
+}
+/* Dark mode footer styles */
+html[data-theme='light'] .footer {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+html[data-theme='light'] .footer__title {
+  color: #212529; /* 设置标题文字颜色为深色 */
+}
+
+/* Dark mode footer styles */
+html[data-theme='dark'] .footer {
+  background-color: #212529;
+  color: #f8f9fa;
+}
+
+html[data-theme='dark'] .footer a {
+  color: #f8f9fa; /* 设置链接文字颜色为白色 */
+}
+
+html[data-theme='dark'] .footer__title {
+  color: #f8f9fa; /* 设置标题文字颜色为白色 */
+}
+
+/* src/css/custom.css */
+
+/* 默认图片样式 */
+.ideal-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* 针对不同屏幕尺寸的样式 */
+@media (max-width: 480px) {
+  .ideal-image {
+    width: 100%; /* 移动设备 */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .ideal-image {
+    width: 75%; /* 平板设备 */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ideal-image {
+    width: 60%; /* 小型桌面设备 */
+  }
+}
+
+@media (min-width: 1025px) {
+  .ideal-image {
+    width: 50%; /* 大型桌面设备 */
+  }
+}
+
+.header-github-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+[data-theme="dark"] .header-github-link::before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
