@@ -25,6 +25,9 @@ jobs:
 
       - name: Build the project
         run: npm run build
+        
+      - name: Copy .env to build directory
+        run: cp .env build/.env
 
       - name: Copy CNAME and robots.txt to build directory
         run: |
