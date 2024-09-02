@@ -87,9 +87,9 @@ const Hero = ({ isRtl = true }) => {
               <FeaturesList />
             </div>
             <div className="tw-pt-4 tw-relative tw-z-[1] tw-text-center tw-text-white lg:tw-w-3/5 ltr:lg:tw-text-left rtl:lg:tw-text-right xl:tw-w-1/2">
-              <Link to="https://github.com/kuyacai/NineOneCopilot/releases" className="tw-btn tw-mx-auto tw-mt-2 tw-block tw-w-fit lg:tw-mx-0 lg:rtl:tw-ml-auto tw-text-xl tw-font-bold">
+              <a href="https://github.com/kuyacai/NineOneCopilot/releases" className="tw-btn tw-mx-auto tw-mt-2 tw-block tw-w-fit lg:tw-mx-0 lg:rtl:tw-ml-auto tw-text-xl tw-font-bold" target="_blank" rel="noopener noreferrer">
                 Download - It's Free
-              </Link>
+              </a>
             </div>
             <div
               className="tw-z-[2] tw-bottom-0 tw-mx-auto tw-w-auto tw-right-0 rtl:tw-left-0 md:tw-w-[540px] lg:tw-absolute xl:tw-w-[650px]"
