@@ -58,10 +58,10 @@ const HeroOneApiWithSwiper = ({ isRtl = false }) => {
                     </Swiper>
                 </div>
                 <div className="tw-pt-0 tw-relative tw-z-[1] tw-text-center tw-text-white tw-flex tw-justify-center tw-gap-10">
-                    <Link to="/about-us" className="tw-btn tw-mx-auto tw-mt-2 tw-block tw-w-fit lg:tw-mx-0 lg:rtl:tw-ml-auto tw-text-xl tw-font-bold">
+                    <Link to="https://user.nineone.ai/panel/token" className="tw-btn tw-mx-auto tw-mt-2 tw-block tw-w-fit lg:tw-mx-0 lg:rtl:tw-ml-auto tw-text-xl tw-font-bold">
                         Get API Key
                     </Link>
-                    <Link to="/about-us" className="tw-btn tw-mx-auto tw-mt-2 tw-block tw-w-fit lg:tw-mx-0 lg:rtl:tw-ml-auto tw-text-xl tw-font-bold">
+                    <Link to="https://github.com/kuyacai/NineOneCopilot/releases" className="tw-btn tw-mx-auto tw-mt-2 tw-block tw-w-fit lg:tw-mx-0 lg:rtl:tw-ml-auto tw-text-xl tw-font-bold">
                         Download Desktop App
                     </Link>
                 </div>
