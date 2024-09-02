@@ -8,6 +8,12 @@ function addNumbering(toc) {
 
   toc.forEach((item) => {
     const { level } = item;
+
+    // Reset counters for levels deeper than the current level
+    for (let i = level + 1; i <= Object.keys(levelCounters).length; i++) {
+      delete levelCounters[i];
+    }
+
     if (!levelCounters[level]) {
       levelCounters[level] = 1;
     } else {

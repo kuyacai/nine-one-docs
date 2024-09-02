@@ -18,29 +18,66 @@ const sidebars = {
     {
       type: 'category',
       label: 'Quick Start',
-      items: ['intro'],
+      collapsed: false,
+      items: [
+        'quick-start/intro',
+        'quick-start/all-in-one-ai-api',
+        'quick-start/nine-one-copilot-quick-start'],
     },
     {
       type: 'category',
-      label: 'Desktop APP',
-      items: [{
+      label: 'Nine One Copilot',
+      collapsed: false,
+      items: ['nine-one-copilot/nine-one-copilot-introduction',
+        {
         type: 'category',
         label: 'Installation',
         items: [
-          'installation/windows',
-          'installation/macos',
+          'nine-one-copilot/installation/windows',
+          'nine-one-copilot/installation/macos',
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Chat',
+        items: [
+          'nine-one-copilot/chat/chat-introduction',
         ],
       },
       {
         type: 'category',
         label: 'LLM Provider',
         items: [
-          'llm/nineone',
-          'llm/openai',
-          'llm/moonshot',
+          'nine-one-copilot/llm/nineone',
+          'nine-one-copilot/llm/openai',
+          'nine-one-copilot/llm/moonshot',
         ],
-      }],
-    }
+      },
+      {
+        type: 'category',
+        label: 'Chat Bots',
+        items: [
+          'nine-one-copilot/chatbots/chatbots-introduction'
+        ],
+      },
+      {
+        type: 'category',
+        label: 'RAG',
+        items: [
+          'nine-one-copilot/rag/rag-introduction'
+        ],
+      },
+      {
+        type: 'category',
+        label: 'Agents',
+        items: [
+          'nine-one-copilot/agents/i18n-assistant'
+        ],
+      },
+    ],
+    },
+    'faq',
+    
   ],
 
   // But you can create a sidebar manually

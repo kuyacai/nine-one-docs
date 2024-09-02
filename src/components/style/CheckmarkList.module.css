@@ -1,0 +1,8 @@
+.checkmarkList li::before {
+  content: '—'; /* 对号符号 */
+  color: #28a745; /* 你可以根据需要更改颜色 */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: 1em;
+}

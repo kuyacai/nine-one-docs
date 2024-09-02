@@ -36,11 +36,6 @@ export default function remarkCustomNumberedHeadings(options) {
   const skipRe = new RegExp(`^(${skip})\$`, 'i');
 
   /**
-   * @type {number[]}
-   */
-  const counters = [];
-
-  /**
    * Transform.
    *
    * @param {Root} tree
@@ -49,6 +44,11 @@ export default function remarkCustomNumberedHeadings(options) {
    *   Nothing.
    */
   return (tree) => {
+    /**
+     * @type {number[]}
+     */
+    const counters = []; // 重置 counters 数组
+
     visit(tree, "heading", node => {
       const counterIndex = node.depth - startDepth;
 
@@ -90,8 +90,7 @@ export default function remarkCustomNumberedHeadings(options) {
           counters.push(1);
         }
       }
-      // Debug log
-      //console.log(`Updating heading: ${textNode.value} -> ${counters.join(".")}. ${text}`);
+
       // Add numbers.
       textNode.value = `${counters.join(".")}. ${text}`;
     });

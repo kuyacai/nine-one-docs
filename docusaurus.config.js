@@ -74,8 +74,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           remarkPlugins: [[require('./plugins/remark-custom-numbered-headings'), { separator: '.' }]],
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -86,15 +85,14 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -114,12 +112,41 @@ const config = {
         },
         items: [
           {
+            to: '/#',
+            label: 'Agents',
+            position: 'left'
+          },
+          {
+            to: '/#',
+            label: 'Chat Bots',
+            position: 'left'
+          },
+          {
+            to: '/#',
+            label: 'Tookits',
+            position: 'left'
+          },
+          {
+            to: '/#',
+            label: 'Models',
+            position: 'left'
+          },
+          {
+            to: '/#',
+            label: 'Download',
+            position: 'left'
+          },
+          {
+            to: '/#',
+            label: 'Pricing',
+            position: 'left'
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
+            position: 'right',
             label: 'Help Center',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
             type: 'localeDropdown',
             position: 'right',
@@ -137,46 +164,140 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Agents',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'I18n Assistant',
+                to: '/',
+              },
+              {
+                label: 'AI Translator',
+                to: '/',
+              },
+              {
+                label: 'Amazon Assistant',
+                to: '/',
+              },
+              {
+                label: 'Shopify Assistant',
+                to: '/',
+              },
+              {
+                label: 'Academic Master',
+                to: '/',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Chat Bots',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '中文润色专家',
+                to: '/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Slogan Master',
+                to: '/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Title Generator',
+                to: '/',
               },
+              {
+                label: '小红书写作专家',
+                to: '/',
+              },
+              {
+                label: '公文写作专家',
+                to: '/',
+              }
             ],
           },
           {
-            title: 'More',
+            title: 'Image Tools',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Remove Background',
+                to: '/',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Image Converter',
+                to: '/',
               },
+              {
+                label: 'Old Photo Restoration',
+                to: '/',
+              },
+              {
+                label: 'Image Upscaler',
+                to: '/',
+              },
+              {
+                label: 'Image to Excel',
+                to: '/',
+              }
+            ],
+          },
+          {
+            title: 'PDF Tools',
+            items: [
+              {
+                label: 'PDF Converter',
+                to: '/',
+              },
+              {
+                label: 'PDF OCR',
+                to: '/',
+              },
+              {
+                label: 'PDF Summary',
+                to: '/',
+              }
+            ],
+          },
+          {
+            title: 'Video Tools',
+            items: [
+              {
+                label: 'Transcribe master',
+                to: '/',
+              },
+              {
+                label: 'Video to PDF',
+                to: '/',
+              }
+            ],
+          },
+          {
+            title: 'Models',
+            items: [
+              {
+                label: 'GPT-4o',
+                to: '/',
+              },
+              {
+                label: 'GPT-4o',
+                to: '/',
+              }
+            ],
+          },
+
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Privacy',
+                to: '/docs/privacy', // 对应 privacy.md 文件的路径
+              },
+              {
+                label: 'Terms & Conditions',
+                to: '/docs/terms', // 对应 privacy.md 文件的路径
+              }
+
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Nine On AI. `,
       },
       prism: {
         theme: prismThemes.github,
