@@ -1,24 +1,24 @@
 ---
 id: all-in-one-ai-api
-title: API所支持的大模型
-sidebar_label: API所支持的大模型
+title: LLMs supported by the API
+sidebar_label: LLMs supported by the API
 slug: /all-in-one-ai-api
 hide_table_of_contents: false
 ---
 
-## API所支持的大模型
+## Models
 
-目前，我们的集成API平台已支持下列大模型：
+Currently, our integrated API platform supports the following large models:
 <ul>
-  <li>&#10003; [OpenAI ChatGPT 系列模型](https://platform.openai.com/docs/guides/gpt/chat-completions-api)（支持 [Azure OpenAI API](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)）</li>
-  <li>&#10003; [Anthropic Claude 系列模型](https://anthropic.com) (支持 AWS Claude)</li>
-  <li>&#10003; [Google PaLM2/Gemini 系列模型](https://developers.generativeai.google)</li>
-  <li>&#10003; [Mistral 系列模型](https://mistral.ai/)</li>
+  <li>&#10003; [OpenAI ChatGPT Series Model](https://platform.openai.com/docs/guides/gpt/chat-completions-api)（Supported [Azure OpenAI API](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)）</li>
+  <li>&#10003; [Anthropic Claude Series Model](https://anthropic.com) (Supported AWS Claude)</li>
+  <li>&#10003; [Google PaLM2/Gemini Series Model](https://developers.generativeai.google)</li>
+  <li>&#10003; [Mistral Series Model](https://mistral.ai/)</li>
   <li>&#10003; [字节跳动豆包大模型](https://console.volcengine.com/ark/region:ark+cn-beijing/model)</li>
-  <li>&#10003; [百度文心一言系列模型](https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html)</li>
-  <li>&#10003; [阿里通义千问系列模型](https://help.aliyun.com/document_detail/2400395.html)</li>
+  <li>&#10003; [百度文心一言Series Model](https://cloud.baidu.com/doc/WENXINWORKSHOP/index.html)</li>
+  <li>&#10003; [阿里通义千问Series Model](https://help.aliyun.com/document_detail/2400395.html)</li>
   <li>&#10003; [讯飞星火认知大模型](https://www.xfyun.cn/doc/spark/Web.html)</li>
-  <li>&#10003; [智谱 ChatGLM 系列模型](https://bigmodel.cn)</li>
+  <li>&#10003; [智谱 ChatGLM Series Model](https://bigmodel.cn)</li>
   <li>&#10003; [360 智脑](https://ai.360.cn)</li>
   <li>&#10003; [腾讯混元大模型](https://cloud.tencent.com/document/product/1729)</li>
   <li>&#10003; [Moonshot AI](https://platform.moonshot.cn/)</li>

@@ -1,7 +1,7 @@
 ---
 id: rag-introduction
-title: RAG 概述
-sidebar_label: 概述
+title: RAG Overview
+sidebar_label: Overview
 slug: /rag-introduction
 hide_table_of_contents: false
 ---

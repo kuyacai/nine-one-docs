@@ -6,6 +6,6 @@ slug: /i18n-assistant
 hide_table_of_contents: false
 ---
 
-## 概述
+## Overview
 
 comming soon

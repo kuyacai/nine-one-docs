@@ -1,62 +1,30 @@
 ---
 id: nine-one-copilot-introduction
-title: Nine One Copilot 
+title: Nine One AI Overview
 sidebar_label: Overview
 slug: /nine-one-copilot-introduction
 hide_table_of_contents: false
 ---
-import CheckmarkList from '@site/src/components/style/CheckmarkList';
 
 ## Overview
 
-Nine One Copilot is an unofficial ChatGPT desktop app for Mac & Windows, All-in-One AI Assistant.
+In today's rapidly evolving digital and intelligent world, artificial intelligence (AI) has become an indispensable part of our daily lives and work. To meet the needs of individual users for efficient and personalized AI services, Nine One AI offers the following two core services:
 
-The Ultimate Desktop Client for Multiple Large Language Models.
+### Integrated API Services
 
-<CheckmarkList>
-- Multi-platform desktop app for Windows, macOS.
-- Supports major LLMs: OpenAI, Moonshot, Qwen, and more.
-- Supports <a href="https://ollama.com/" target="_blank">Ollama</a>.
-- Enables personal RAG creation using AI models.
-- Integrates multiple AI agents.
-- Includes various tools.
-</CheckmarkList>
+We provide an integrated API platform that allows users to access AI services from multiple large language model providers through a single interface. This one-stop service greatly simplifies the user's operation process and improves work efficiency. The main features of the integrated API include:
 
-## Installation Guide
+- **Unified interface:** Users don't need to learn the API interfaces of different providers separately. We provide a unified access method, making integration and calling simple and quick.
+- **Multi-source access:** Users can easily access a variety of AI services, including OpenAI's ChatGPT and large language models from other providers like MoonShot.
+- **Flexibility:** Whether users need text generation, language understanding, or other AI functions, our API can provide the corresponding support.
 
-### Windows Installation
-1. **Download the Application**: Visit the official <a href="https://kuyacai.github.io/NineOneCopilot/" target="_blank"> Nine One Copilot website</a> and download [the latest version](https://kuyacai.github.io/NineOneCopilot/) for Windows.
-2. **Unzip the File**: Once downloaded, unzip the file to any directory of your choice.
-3. **Run NineOneCopilot.exe**: Navigate to the directory where you unzipped the files and double-click on `NineOneCopilot.exe` to start the application.
-4. **Create a Desktop Shortcut** (Optional): For easier access, you can right-click on `NineOneCopilot.exe` and select "Create shortcut". Then, move this shortcut to your desktop.
+### Desktop Software Service
 
-### macOS Installation
-1. **Download the Application**: Go to the <a href="https://kuyacai.github.io/NineOneCopilot/" target="_blank">Nine One Copilot official website</a> and download the latest version for macOS.
-2. **Unzip the File**: After downloading, find the `.zip` file in your Downloads folder and double-click it to unzip.
-3. **Install the Application**: Drag the `NineOneCopilot.app` file to your Applications folder. This action installs the application on your macOS device.
-4. **Run Nine One Copilot**: Navigate to your Applications folder, find `NineOneCopilot.app`, and double-click it to launch the application.
+In addition to integrated API services, Nine One AI has developed a desktop software - Nine One Copilot, aimed at providing users with a richer localized AI experience. This software has the following advantages:
 
-## Quick Start Guide
-Getting Started with Nine One Copilot
+- **Multi-model access:** The software supports connecting to large language models from multiple AI service providers, allowing users to choose based on their personal preferences.
+- **Integrated functions:** In addition to basic text processing functions, the software also integrates advanced features such as Agent, Retrieval-Augmented Generation (RAG), and an intelligent dialogue toolkit.
+- **Cross-platform:** Supports Windows and Mac OS systems, and a Linux version will be available in the future.
+- **Personalized experience:** Users can customize the software interface and functions according to their needs, enjoying a highly personalized AI service.
 
-Welcome to Nine One Copilot, your powerful AI assistant for Windows and Mac computers! This quick guide will help you get started with using Nine One Copilot and exploring the world of AI at your fingertips.
-
-### Setting Up Your User Data Directory
-
-When you first launch Nine One Copilot, it will ask you to set up a user data directory. This is where all your personal data and settings will be stored. Choose a location that you can easily access and remember, as you'll need it later.
-
-### Connecting to AI Models
-
-Nine One Copilot lets you work with various AI models from different providers, such as OpenAI, Moonshot, and Qwen. To connect to these models, you'll need to provide their respective API keys. Each provider has its own way of obtaining and setting up API keys, so we'll cover the specific steps for each provider in later sections of this guide.
-
-### Exploring Available Models
-
-Once you've connected to your chosen AI models, you can browse the list of available models within Nine One Copilot. This will give you an overview of the different AI capabilities you can access and utilize.
-
-### Creating Conversations and Interacting with AI
-
-Now comes the fun part! To start interacting with AI models, you'll need to create a new conversation. This is where you'll type your prompts, questions, or instructions for the AI to process and respond to. Nine One Copilot will act as your intermediary, sending your requests to the selected AI model and displaying the responses back to you.
-
-With these basic steps, you're ready to embark on your AI journey using Nine One Copilot. Remember, this is just the beginning – there's a whole world of AI possibilities waiting to be explored!
-
-
+Through these two services, Nine One aims to provide users with a comprehensive, efficient, and personalized AI solution that can play an important role in office automation, content creation, and daily life assistance.

@@ -1,47 +1,47 @@
 ---
 id: nine-one-copilot-quick-start
-title: Nine One Copilot 使用指南
-sidebar_label: Nine One Copilot 使用指南
+title: Nine One Copilot Guidelines
+sidebar_label: Nine One Copilot Guidelines
 slug: /nine-one-copilot-quick-start
 hide_table_of_contents: false
 ---
 
+## Getting Started with Nine One Copilot
 
-开始使用 Nine One Copilot
+Welcome to Nine One Copilot, your powerful AI assistant for Windows and Mac! This quick guide will help you get started with Nine One Copilot and easily explore the world of AI.
 
-欢迎使用 Nine One Copilot，这是适用于 Windows 和 Mac 电脑的强大 AI 助手！本快速指南将帮助您开始使用 Nine One Copilot 并轻松探索 AI 世界。
+## Download the Latest Version
 
-## 下载最新版本
+To ensure the best experience, we recommend downloading the latest version of our software. 
 
-为了你更好的使用我们的软件，建议你下载最新版本。
+Our latest versions typically include:
 
-我们的最新版本通常会：
+* **New features:** The latest version often includes new features and improvements to meet user needs and enhance user experience. 
+* **Performance optimizations:** New versions may include performance improvements to ensure smoother and more stable software operation.
+* **Security enhancements:** Regular updates can fix known security vulnerabilities to protect user data and privacy.
+* **Compatibility:** New versions may improve compatibility with different operating systems and devices, reducing compatibility issues.
 
-- 功能更新：最新版本通常包括新增功能和改进，以满足用户的需求并提高用户体验。
-- 性能优化：新版本可能包含性能提升，确保软件运行更加流畅和稳定。
-- 安全增强：定期更新可以修复已知的安全漏洞，保护用户数据和隐私安全。
-- 兼容性：新版本可能提高与不同操作系统和设备的兼容性，减少兼容性问题。
+Click here to go to the download page and select the appropriate download option based on your operating system (such as Windows, macOS, or Linux). 
 
-点击这里进入下载页面，根据您的操作系统（如Windows、MacOS或Linux），选择相应的下载选项。
+Once downloaded, simply unzip it to use.
 
-下载完成后，直接解压缩，即可使用。
+If you have any questions, please refer to our detailed documentation.
 
-如你有任何疑问，请参阅我们的详细文档。
+## Set Your User Data Directory
 
-## 设置用户数据目录
+When you start Nine One Copilot for the first time, it will ask you to set your user data directory. This is where all your personal data and settings will be stored. Choose a location that you can easily access and remember, as you will need it later.
 
-首次启动 Nine One Copilot 时，它会要求您设置用户数据目录。这是存储您所有个人数据和设置的位置。选择一个您可以轻松访问和记住的位置，因为您以后会需要它。
+## Connect to AI Models
 
-## 连接到 AI 模型
+Nine One Copilot allows you to use various AI models from different providers, such as OpenAI, Moonshot, and Qwen. To connect to these models, you need to provide their respective API keys. Each provider has its own way of obtaining and setting API keys. If you need help, please click on the left navigation bar, select the corresponding provider, and check the details.
 
-Nine One Copilot 可让您使用来自不同提供商的各种 AI 模型，例如 OpenAI、Moonshot 和 Qwen。要连接到这些模型，您需要提供它们各自的 API 密钥。每个提供商都有自己的获取和设置 API 密钥的方式，如果你需要帮助，请点击左侧导航栏，选择对应的提供商，查阅详情。
+## Explore Available Models
 
-## 探索可用模型
+Once you've connected to your chosen AI model, you can browse the list of available models in Nine One Copilot.
 
-连接到所选 AI 模型后，您可以浏览 Nine One Copilot 中的可用模型列表。
+## Create a Conversation and Interact with AI
 
-## 创建对话并与 AI 交互
+Now comes the fun part! To start interacting with the AI model, you need to create a new conversation. Here, you will enter your prompt, question, or instruction for the AI to process and respond to. Nine One Copilot will act as your intermediary, sending your request to the selected AI model and showing you the response.
 
-现在到了有趣的部分！要开始与 AI 模型交互，您需要创建一个新的对话。在这里，您将输入提示、问题或说明，以便 AI 进行处理和响应。Nine One Copilot 将充当您的中介，将您的请求发送到所选 AI 模型并向您显示响应。
+With these basic steps, you can start your AI journey with Nine One Copilot. Remember, this is just the beginning – a whole world of AI possibilities awaits exploration!
 
-通过这些基本步骤，您就可以使用 Nine One Copilot 开始您的 AI 之旅了。请记住，这只是一个开始——整个 AI 可能性世界都在等待探索！

@@ -1,41 +1,41 @@
 ---
 id: intro
-title: Nine One AI 概述
-sidebar_label: 概述
+title: Nine One AI Overview
+sidebar_label: Overview
 slug: /
 hide_table_of_contents: false
 ---
 
-## 概述
+## Overview
 
-2022年末，OpenAI发布 GPT-3.5 模型，并同时发布基于 GPT-3.5 的会话模型ChatGPT3.5，该模型具有强大的自然语言处理能力和广泛的知识面，不仅能够在文本生成领域上展现出极高的创造性和准确性，还能够在对话、内容创作、代码编写等其他领域展现出广泛的应用潜力。该模型的发布，极大地推动了生成式AI技术的普及与应用边界的拓展。
+At the end of 2022, OpenAI released the GPT-3.5 model and, alongside it, the conversational model ChatGPT 3.5. This model demonstrated powerful natural language processing capabilities and a broad knowledge base, excelling not only in text generation but also in fields like dialogue, content creation, and code writing. Its release significantly propelled the popularization and application of generative AI technology.
 
-随着GPT3.5的成功，全球范围内的高科技企业纷纷跟进，发布了各自的大模型产品，如阿里云的通义千问，百度文心一言等，通用大模型、行业大模型、闭源模型、开源模型、各种微调模型，百花齐放，争取斗艳。这一趋势不仅仅限于文生文（文本生成文本）领域，还延伸至了文生图（文本生成图像）等更加多元化的创意生成方向。例如，Midjourney和Stable Diffusion等文生图模型的兴起，让用户能够仅凭一段文字描述，就快速生成出细腻逼真的图像作品，极大地丰富了内容创作的可能性和效率。这些模型不仅为艺术家、设计师等创意工作者提供了强大的工具，也激发了普通用户对于内容创作的热情与参与度。
+Following GPT-3.5's success, tech giants worldwide introduced their own large language models, such as Alibaba Cloud's Tongyi Qianwen and Baidu's Wenxin Yiyin. A plethora of models emerged, including general-purpose, industry-specific, closed-source, open-source, and fine-tuned models, each vying for dominance. This trend extended beyond text-to-text generation to more diverse creative directions like text-to-image. For instance, the rise of text-to-image models like Midjourney and Stable Diffusion allows users to create detailed and realistic images from simple text descriptions, greatly enriching content creation possibilities and efficiency. These models not only provide powerful tools for artists and designers but also inspire ordinary users to participate in content creation.
 
-随着各大模型版本的不断迭代（如GPT系列已迭代至GPT-4o），各大模型的能力也越来越强，也越来越“智能”，但不同的模型在处理一些特定任务的性能差异也越来越明显，同时，私有数据的保护也显得尤为重要。因此，Nine One AI 正致力于整合这些先进的生成式AI技术，为用户提供一站式的解决方案。Nine One AI不仅集成了GPT-4o、通义千问等强大的语言模型，还引入了MidJourney和Stable Diffusion等图像生成工具，让用户能够轻松地利用AI的力量创造出各种形式的内容。无论是撰写文章、创作插画还是设计产品原型，Nine One AI 都能够提供全面的支持，帮助用户提升创造力、加速工作流程并释放无限可能。
+As models continue to evolve (e.g., the GPT series has reached GPT-4), their capabilities become increasingly sophisticated. However, performance differences among models in handling specific tasks have become more apparent, and the protection of private data has become paramount. Therefore, Nine One AI is dedicated to integrating these advanced generative AI technologies, providing users with a one-stop solution. Nine One AI not only integrates powerful language models like GPT-4 and Tongyi Qianwen but also incorporates image generation tools like Midjourney and Stable Diffusion, enabling users to effortlessly create various forms of content. Whether you're writing articles, creating illustrations, or designing product prototypes, Nine One AI offers comprehensive support to enhance your creativity, accelerate your workflow, and unlock endless possibilities.
 
-Nine One AI 为用户提供以下两种服务：
+Nine One AI provides the following two services:
 
-- **集成API服务**：用户只需要一个API Key ，即可调用超过100个大模型。同时，采用标准的OpenAI 接口，可以被大多数的客户端工具适配；
-- **Nine One Copilot**：一款跨平台的桌面软件，支持超过100个大模型的调用，数百个Chat Bots和Agents应用，以及各种智能化工具，并可打造个人RAG；
+- **Integrated API service:** With just one API key, users can access over 100 large language models. Additionally, using the standard OpenAI interface, it can be adapted to most client tools.
+- **Nine One Copilot:** A cross-platform desktop software that supports over 100 large language models, hundreds of ChatBots and Agents, various intelligent tools, and allows you to build your own RAG.
 
-### 集成API服务
+## Integrated API Service
 
-一个集成的API平台，允许用户通过单一入口访问多个大型语言模型提供商的AI服务。这种一站式服务极大地简化了用户的操作流程，提高了工作效率。以下是集成API的主要特点：
+An integrated API platform that allows users to access AI services from multiple large language model providers through a single interface. This one-stop service greatly simplifies the user's operation process and improves work efficiency. The main features of the integrated API include:
 
-- **统一接口**：用户无需分别学习不同提供商的API接口，我们提供统一的访问方式，使得集成和调用变得简单快捷。
-- **多源访问**：用户可以方便地访问包括OpenAI的ChatGPT在内的多种AI服务，以及MoonShot等其他提供商的大语言模型。
-- **灵活性**：无论用户需要文本生成、语言理解还是其他AI功能，我们的API都能提供相应的支持。
+- **Unified interface:** Users don't need to learn the API interfaces of different providers separately. We provide a unified access method, making integration and calling simple and quick.
+- **Multi-source access:** Users can easily access a variety of AI services, including OpenAI's ChatGPT and large language models from other providers like MoonShot.
+- **Flexibility:** Whether users need text generation, language understanding, or other AI functions, our API can provide the corresponding support.
 
-### Nine One Copilot
+## Nine One Copilot
 
-Nine One AI 开发了一款桌面软件**Nine One Copilot**，旨在为用户提供更丰富的本地化AI体验。这款软件具有以下优势：
+Nine One AI has developed a desktop software **Nine One Copilot** aimed at providing users with a richer localized AI experience. This software has the following advantages:
 
-- **多模型接入**：软件支持接入多家AI服务提供商的大语言模型，用户可以根据个人偏好选择使用；
-- **Chat Bots**: Nine One AI 为不同场景预设多种机器人，帮助您快速掌握并利用其强大的功能。同时，它允许您根据自己的需求来自定义您自己的 Bot。
-- **Agents**：得益于大模型的强大能力，Nine One AI 提供了大量的 AI Agents，帮助您解决日常的工作和生活所需。
-- **Retrieval-Augmented Generation (RAG)**：你的数据你做主，利用Nine One Copilot，选择你所需要的大模型，打造你自己的知识库。
-- **工具集**：结合AI的能力，提供了多种基于文本、PDF、图像、音频、视频的处理工具。
-- **跨平台**: 支持Windows 和 Mac OS 系统，后期也会提供支持Linux 的版本；
+- **Multi-model access:** The software supports connecting to large language models from multiple AI service providers, allowing users to choose based on their personal preferences.
+- **Chat Bots:** Nine One AI pre-sets various bots for different scenarios, helping you quickly master and utilize their powerful functions. You can also customize your own bots based on your needs.
+- **Agents:** Thanks to the powerful capabilities of large language models, Nine One AI provides a large number of AI Agents to help you with your daily work and life.
+- **Retrieval-Augmented Generation (RAG):** You have control over your data. Using Nine One Copilot, choose the large language model you need and build your own knowledge base.
+- **Toolset:** Combined with AI capabilities, it provides a variety of tools for processing text, PDFs, images, audio, and video.
+- **Cross-platform:** Supports Windows and Mac OS systems, and a Linux version will be available in the future.
 
-通过这两种服务，Nine One AI 旨在为用户提供一个全面、高效且个性化的AI解决方案，无论是在办公自动化、内容创作还是日常生活辅助方面，都能发挥重要作用。
+Through these two services, Nine One AI aims to provide users with a comprehensive, efficient, and personalized AI solution that can play an important role in office automation, content creation, and daily life assistance.
